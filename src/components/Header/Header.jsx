@@ -38,7 +38,7 @@ const Header = () => {
               Home
             </Link>
           </li>
-          <li onClick={() => setMenu(false)}>
+          <li>
             {" "}
             <Link
               to="programs"
@@ -49,7 +49,7 @@ const Header = () => {
               Programs
             </Link>
           </li>
-          <li onClick={() => setMenu(false)}>
+          <li >
             {" "}
             <Link
               to="reasons"
@@ -60,9 +60,14 @@ const Header = () => {
               Why Us
             </Link>
           </li>
-          <li onClick={() => setMenu(false)}>
+          <li>
             {" "}
-            <Link to="plans" span={true} smooth={true}>
+            <Link
+              to="plans"
+              span={true}
+              smooth={true}
+              onClick={() => setMenu(false)}
+            >
               Plans
             </Link>
           </li>
