@@ -31,6 +31,7 @@ const Header = () => {
             {" "}
             <Link
               to="home"
+              activeClass="active"
               span={true}
               smooth={true}
               onClick={() => setMenu(false)}
